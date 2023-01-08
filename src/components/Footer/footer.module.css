@@ -1,0 +1,16 @@
+.footerContainer {
+  margin-top: auto;
+  background-color:  black;
+  bottom: 0;
+  width: 100%;
+  padding:  4rem 0;
+}
+
+.title {
+  text-align: center;
+  color: #efefef;
+}
+.title:hover {
+  transition: ease 1s;
+  color: rgb(243, 243, 164)
+}
