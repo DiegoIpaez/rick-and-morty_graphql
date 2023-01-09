@@ -22,13 +22,14 @@ export default function Home() {
   `;
 
   const [page, setPage] = useState(1);
-  const { data } = useQuery(query, { variables: { page } });
+  const { data, loading } = useQuery(query, { variables: { page } });
 
   return (
     <div className="mt-4 mb-5">
       <div className="container mt-3">
         <CharacterList
           data={data?.characters?.results || []}
+          loading={loading}
           info={data?.characters?.info}
           page={page}
           setPage={setPage}
