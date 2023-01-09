@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { internalPaths } from '../../utils/constants';
+import { internalPaths } from '../../utils/config';
 import NavItem from './NavItem/NavItem';
 
 export default function Navbar() {
