@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <NavItem title={'home'} path={home} />
-            <NavItem title={'contact'} path={contact} />
+            <NavItem title={'contact'} path={contact} disabled={true} />
           </ul>
         </div>
       </div>
