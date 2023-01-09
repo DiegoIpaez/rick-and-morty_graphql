@@ -1,0 +1,28 @@
+.dataStyle {
+  margin: 0.9rem 0px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dataStyle:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0px -1px 26px 1px rgba(102, 102, 102, 0.48);
+  -webkit-box-shadow: 0px -1px 26px 1px rgba(102, 102, 102, 0.48);
+  -moz-box-shadow: 0px -1px 26px 1px rgba(102, 102, 102, 0.48);
+}
+.dataStyle:hover .textName {
+  text-overflow: clip;
+  overflow: visible;
+  white-space: normal;
+}
+
+.textName {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 16px;
+  font-weight: 100;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
