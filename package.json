@@ -6,6 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint ./src --fix . --ext .js,.jsx",
     "format": "prettier --write ."

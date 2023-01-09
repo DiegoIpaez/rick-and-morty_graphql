@@ -24,4 +24,4 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:diegoipaez/rickAndMorty_graphql.git main:gh-pages
+# git push -f git@github.com:diegoipaez/rick-and-morty_graphql.git main:gh-pages
