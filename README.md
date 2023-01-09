@@ -1,8 +1,8 @@
-# Reactjs + Vite Example
+# Rick And Morty GraphQl
 
-Plantilla de un proyecto con reactjs, react-router-dom y react. Usando vite. 
+Practica en react consumiendo la Graphql-Api de RickAndMorty
 
-## Pre-requisitos
+## Pre-requisitos 
 
 Tener instalados los programas:
 

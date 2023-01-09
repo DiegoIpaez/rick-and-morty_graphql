@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link to={home} className="navbar-brand">
-          Navbar
+          RickAndMortyGraphQl
         </Link>
         {buttonBurger()}
         <div className="collapse navbar-collapse" id="navbarNav">
