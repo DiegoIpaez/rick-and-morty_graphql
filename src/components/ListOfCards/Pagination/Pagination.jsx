@@ -13,17 +13,17 @@ export default function Pagination({ page, setPage, info }) {
   return (
     <>
       <h5 className="text-center text-secondary">
-        Page {page} of {totalPages}
+        Page {!totalPages ? 0 : page} of {!totalPages ? 0 : totalPages}
       </h5>
       <div className="d-flex justify-content-center my-3">
         <button
-          disabled={page === 1}
+          disabled={page === 1 || !totalPages}
           className="btn btn-dark me-2 rounded-pill px-4 shadow"
           onClick={() => prevPage()}>
           Prev
         </button>
         <button
-          disabled={info && page === info.pages}
+          disabled={(info && page === info.pages) || !totalPages}
           className="btn btn-dark ms-2 rounded-pill px-4 shadow"
           onClick={() => nextPage()}>
           Next
