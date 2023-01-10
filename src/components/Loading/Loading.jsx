@@ -1,8 +1,10 @@
-export default function Loading() {
+import { containerLoading, sizeOfLoading } from './loading.module.css'
+export default function Loading({ styles }) {
+  const defaultStyle = `${sizeOfLoading} spinner-border`;
   return (
-    <div class="text-center mt-5">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    <div className={containerLoading}>
+      <div className={styles || defaultStyle} role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     </div>
   );
