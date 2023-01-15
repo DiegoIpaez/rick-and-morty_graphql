@@ -2,7 +2,7 @@ import { usePagination } from '../../hooks/usePagination';
 
 export default function Pagination({ page, setPage, info, pageSize = 9 }) {
   const totalPages = info ? info.pages : '...';
-  const pagination = usePagination(page, totalPages , pageSize);
+  const pagination = usePagination(page, totalPages, pageSize);
   const nextPage = () => {
     if (!info) return null;
     if (info?.pages <= page) return null;
@@ -27,7 +27,7 @@ export default function Pagination({ page, setPage, info, pageSize = 9 }) {
         </button>
         <nav aria-label="...">
           <ul className="pagination pagination m-0">
-            {page > pageSize && (
+            {page > 10 && (
               <li
                 onClick={() => setPage(1)}
                 className="page-item me-2"
@@ -44,14 +44,20 @@ export default function Pagination({ page, setPage, info, pageSize = 9 }) {
                 <span className="page-link text-secondary">{data}</span>
               </li>
             ))}
-            <li
-              onClick={() => setPage(totalPages ?? 1)}
-              className={
-                totalPages === page ? 'page-item active ms-2' : 'page-item ms-2'
-              }
-              aria-current="page">
-              <span className="page-link text-secondary">...{totalPages}</span>
-            </li>
+            {totalPages && totalPages > 9 && (
+              <li
+                onClick={() => setPage(totalPages ?? 1)}
+                className={
+                  totalPages === page
+                    ? 'page-item active ms-2'
+                    : 'page-item ms-2'
+                }
+                aria-current="page">
+                <span className="page-link text-secondary">
+                  ...{totalPages}
+                </span>
+              </li>
+            )}
           </ul>
         </nav>
         <button
