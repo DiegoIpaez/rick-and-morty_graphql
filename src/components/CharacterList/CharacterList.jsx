@@ -1,5 +1,5 @@
 import Card from './Card/Card';
-import Pagination from './Pagination/Pagination';
+import Pagination from '../Pagination/Pagination';
 import Loading from '../Loading/Loading';
 
 export default function ListOfCards({ data, loading, info, page, setPage }) {

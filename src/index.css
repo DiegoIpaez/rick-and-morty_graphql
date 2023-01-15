@@ -10,3 +10,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.active>.page-link, .page-link.active a{
+  color: #efefef !important;
+  background-color: black !important;
+  border-color: black !important;
+}

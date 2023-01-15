@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useQuery, gql } from '@apollo/client';
-import CharacterList from '../../components/ListOfCards/CharacterList';
+import CharacterList from '../../components/CharacterList/CharacterList';
 import Search from '../../components/Search/Search';
 
 export default function Home() {
