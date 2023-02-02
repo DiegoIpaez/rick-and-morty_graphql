@@ -11,6 +11,6 @@
   color: #efefef;
 }
 .title:hover {
-  transition: ease 1s;
+  transition: ease 2.5s;
   color: rgb(243, 243, 164)
 }

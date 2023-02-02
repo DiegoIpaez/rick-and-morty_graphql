@@ -1,0 +1,11 @@
+.searchInput {
+  color: rgb(166, 166, 166) !important;
+  border-color: rgb(231, 231, 231) !important;
+}
+.searchInput:focus {
+  box-shadow: none !important;
+}
+
+.labelOfSearch {
+  color: rgb(166, 166, 166);
+}

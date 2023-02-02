@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { internalPaths } from '../../utils/constants';
+import { internalPaths } from '../../utils/config';
 import NavItem from './NavItem/NavItem';
 
 export default function Navbar() {
@@ -20,13 +20,13 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link to={home} className="navbar-brand">
-          Navbar
+          RickAndMortyGraphQl
         </Link>
         {buttonBurger()}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <NavItem title={'home'} path={home} />
-            <NavItem title={'contact'} path={contact} />
+            <NavItem title={'contact'} path={contact} disabled={true} />
           </ul>
         </div>
       </div>

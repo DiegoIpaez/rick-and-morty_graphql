@@ -6,13 +6,17 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint ./src --fix . --ext .js,.jsx",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@apollo/client": "^3.7.3",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^4.0.0",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"

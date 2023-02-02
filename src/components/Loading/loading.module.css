@@ -1,0 +1,10 @@
+.containerLoading {
+  text-align: center;
+  margin-top: 1.9rem;
+  /* margin-bottom: 56rem; */
+}
+
+.sizeOfLoading {
+  width: 2.7rem !important;
+  height: 2.7rem !important;
+}
