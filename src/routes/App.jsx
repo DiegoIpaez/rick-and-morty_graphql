@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer';
 import Home from '../pages/Home/Home';
 import Error404 from '../pages/Error404/Error404';
 import client from '../client';
+import Character from '../pages/Character/Character';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path={internalPaths.home} element={<Home />} />
+          <Route path={internalPaths.character} element={<Character />} />
           <Route path={internalPaths.error} element={<Error404 />} />
         </Routes>
         <Footer />
