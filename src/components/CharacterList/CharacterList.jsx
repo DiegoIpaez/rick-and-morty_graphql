@@ -6,7 +6,7 @@ export default function ListOfCards({ data, loading, info, page, setPage }) {
   const linkTo = '/character';
   return (
     <>
-      <Pagination page={page} setPage={setPage} info={info} />
+      <Pagination page={page || 0} setPage={setPage} info={info} />
       {loading ? (
         <Loading />
       ) : (
