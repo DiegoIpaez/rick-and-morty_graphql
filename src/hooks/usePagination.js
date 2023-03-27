@@ -18,7 +18,7 @@ export const usePagination = (page, totalPages, pageSize) => {
   };
 
   useEffect(() => {
-    if (!totalPages) return null;
+    if (!totalPages) return;
     const pagination = getPages(page, totalPages);
     setPagination(pagination);
   }, [page, totalPages]);
